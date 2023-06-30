@@ -104,6 +104,7 @@ def Plots(data):
 
     plt.suptitle('A plot of observed against MPI-M-MPI-ESM with GERICS-REMO2015 and NCC-NorESM1-M with GERICS-REMO2015')
     plt.tight_layout()
+    # plt.save_fig(str(data))
 Plots(tx_data)
 Plots(pr_data)
 Plots(tn_data)
