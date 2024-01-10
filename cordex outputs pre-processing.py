@@ -5,7 +5,6 @@ def pro_data(da):
     dat = da.drop_vars('lon').drop_vars('lat')
     dat = dat.rename({'rlon':'lon'}).rename({'rlat':'lat'})
     return(dat)
-
 def check_leap(data):
     return(data.time.dt.calendar)
 files = glob.glob('../../stevecordex/*.nc')
